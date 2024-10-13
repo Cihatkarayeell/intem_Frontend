@@ -1,0 +1,12 @@
+blockquote {
+  display: block;
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0.5em 0 0.5em 1.5em;
+  font-style: italic;
+  border-left: var(--border-2-width) solid var(--color-text-muted);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
