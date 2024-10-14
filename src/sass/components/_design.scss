@@ -1,0 +1,58 @@
+.design-block{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+    .design-card{
+        width: 100%;
+        height: 56.8rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .text{
+            background-color: #F4F1EE;
+            padding-top: 6.4rem;
+            padding-left: 6rem;
+            padding-right: 10.9rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            max-width: 76.5rem;
+            height: 100%;
+            .title{
+                font-size: 1.7rem;
+                line-height: 2rem;
+                @include medium;
+                color: #000000;
+                opacity: .5;
+                margin-bottom: 3.8rem;
+            }
+            .desc{
+                font-size: 2.8rem;
+                line-height: 3.4rem;
+                color: #000000;
+                @include light;
+                margin-bottom: 3rem;
+                .strong{
+                    @include medium;
+                    display: inline;
+                }
+            }
+        }
+        .img{
+            position: relative;
+            &:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 7.7rem;
+                height: 100%;
+                background-color: #ffffff;
+                opacity: .5;
+            }
+        }
+    }
+}

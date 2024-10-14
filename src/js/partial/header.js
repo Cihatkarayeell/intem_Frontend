@@ -1,9 +1,3 @@
-app.header = { 
-  init: function () {
-    if (document.getElementById('header')) { 
-    }
-  },
-}
-
-
- 
+document.querySelector('#searchButton').addEventListener('click', function() {
+    this.querySelector('.search-box').classList.add('active');
+});

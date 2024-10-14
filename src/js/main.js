@@ -5,7 +5,7 @@ const GET_PARAM = (key) => {
 	return new URL(FULL_URL).searchParams.get(key);
 };
 
-app = [];
+
 
 // PARTIALS
 @@include('partial/header.js') 
@@ -26,3 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
  
 
 @@include('partial/init.js') 
+@@include('partial/hero-slider.js')
+@@include('partial/sidebar-menu.js')
+@@include('partial/loading-page.js')
+@@include('partial/video-modal.js')
+@@include('partial/cookie-modal.js')
+@@include('partial/references-slider.js')
+
