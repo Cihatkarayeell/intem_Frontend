@@ -6,7 +6,6 @@
     padding-bottom: 6.4rem;
     .design-card{
         width: 100%;
-        height: 56.8rem;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -35,9 +34,36 @@
                 color: #000000;
                 @include light;
                 margin-bottom: 3rem;
+                opacity: .8;
                 .strong{
                     @include medium;
                     display: inline;
+                }
+            }
+            .sub-content{
+                font-size: 2.6rem;
+                line-height: 2.9rem;
+                color: #000000;
+                @include regular;
+                font-family: "Philosopher", sans-serif;
+                margin-top: 3.2rem;
+                margin-bottom: 1.4rem;
+            }
+            .sub-header{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .name{
+                    font-size: 1.7rem;
+                    line-height: 2rem;
+                    @include medium;
+                    color: #000000;
+                }
+                .title{
+                    font-size: 1.7rem;
+                    line-height: 2rem;
+                    color: #000000;
+                    @include light;
                 }
             }
         }
@@ -52,6 +78,65 @@
                 height: 100%;
                 background-color: #ffffff;
                 opacity: .5;
+            }
+        }
+    }
+    &#about-intem{
+        padding-top: 5rem;
+        .design-card{
+            .text{
+                padding-right: 7.5rem;
+                .desc{
+                    font-size: 1.7rem;
+                    line-height: 2rem;
+                    margin-bottom: 2rem;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    &#projectsInvestments{
+        padding-top: 0;
+        padding-bottom: 3.9rem;
+        .design-card{
+            .text{
+                padding-right: 7.5rem;
+                .desc{
+                    font-size: 1.7rem;
+                    line-height: 2rem;
+                    margin-bottom: 2rem;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    &#phılosophy{
+        padding-top: 6.9rem;
+        .design-card{
+            .text{
+                padding-right: 7.5rem;
+                .desc{
+                    font-size: 1.7rem;
+                    line-height: 2rem;
+                    margin-bottom: 2rem;
+                    position: relative;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: -3rem;
+                        width: 12.7rem;
+                        height: .2rem;
+                        background-color: #C8BAAF;
+                    }
+                }
             }
         }
     }

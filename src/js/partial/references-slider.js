@@ -11,3 +11,5 @@ var swiper = new Swiper(".mySwiper-references", {
       },
       loop:true
   });
+  
+  

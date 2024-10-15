@@ -1,0 +1,25 @@
+.breadcrumb{
+    width: 100%;
+    padding-top: 1.6rem;
+    ol{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        opacity: .8;
+        li{
+            a{
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+                @include light;
+                color: #000000;
+            }
+        }
+        span{
+            max-width: 1.2rem;
+            max-height: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

@@ -14,6 +14,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        overflow: hidden;
         &:before{
             content: "";
             background-color: rgba(0,0,0,.2);
@@ -31,6 +32,20 @@
             height: 100%;
             left: 0;
             top: 0;
+        }
+        video{
+            position: absolute;
+            left: 0;
+            top: 0;
+            min-width: 100%;
+            min-height: 100%;
+            background-size: cover;
+            background-position: center;
+            source{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         .text{
             z-index: 1;
@@ -186,6 +201,60 @@
             @include light;
             transform: rotate(-90deg);
             margin-top: 3.7rem;
+        }
+    }
+}
+.subpage-hero{
+    .opacity-title{
+        font-size: 1.7rem;
+        line-height: 2rem;
+        color: #ffffff;
+        opacity: .5;
+        @include medium;
+        margin-top: 2.6rem;
+    }
+    .text{
+        margin: 0 auto;
+    }
+    .hero-info-text{
+        width: auto;
+        margin: 0 auto;
+        margin-top: 6.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 4.5rem;
+        .vertical-line{
+            height: 8.5rem;
+            width: .1rem;
+            background-color: #ffffff;
+        }
+        .info-item{
+            .header{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-bottom: .5rem;
+                .strong-text{
+                    font-size: 3.2rem;
+                    line-height: 3.8rem;
+                    color: #ffffff;
+                    @include medium;
+                }
+                .light-text{
+                    font-size: 1.6rem;
+                    line-height: 1.9rem;
+                    color: #ffffff;
+                    @include light;
+                    margin-left: .5rem;
+                }
+            }
+            .info-desc{
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                color: #ffffff;
+                @include regular;
+            }
         }
     }
 }
