@@ -15,6 +15,27 @@
     .card-img{
         max-width: 76.3rem ;
         max-height: 54.1rem;
+        .card-img-wrap{
+            display: flex;
+            img{
+                width: 67.5%;
+            }
+            .column{
+                display: flex;
+                flex-direction: column;
+                width: 32.5%;
+                img{
+                    width: 100%;
+
+                    &:first-child{
+                        height: 56.3%;
+                    }
+                    &:last-child{
+                        height: 43.7%;
+                    }
+                }
+            }
+        }
     }
     .text-card{
         display: flex;
@@ -57,6 +78,36 @@
             .desc{
                 font-size: 2rem;
                 line-height: 2.4rem;
+            }
+        }
+    }
+    &.sub-page{
+        .text-card{
+            .desc{
+                font-size: 1.7rem;
+                line-height: 2rem;
+                .strong{
+                    @include medium;
+                }
+            }
+        }
+    }
+    &#aı-generated{
+        margin-bottom: 8.4rem;
+        .text-card{
+            padding-bottom: 7.1rem;
+            .header{
+                .title{
+                    margin-bottom: 3.7rem;
+                }
+            }
+            .desc{
+                font-size: 2rem;
+                line-height: 2.4rem;
+                margin-bottom: 0;
+                .strong{
+                    @include medium;
+                }
             }
         }
     }

@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
  
 
 @@include('partial/init.js') 
+@@include('partial/news-detail-modal.js')
 @@include('partial/hero-slider.js')
 @@include('partial/sidebar-menu.js')
 @@include('partial/loading-page.js')

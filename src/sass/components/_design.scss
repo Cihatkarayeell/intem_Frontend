@@ -140,4 +140,27 @@
             }
         }
     }
+    &.sub-page{
+        padding-top: 5rem;
+        .design-card{
+            .text{
+                padding-right: 7.5rem;
+                .desc{
+                    font-size: 1.7rem;
+                    line-height: 2rem;
+                    margin-bottom: 2rem;
+                    position: relative;
+                    opacity: .8;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    &#yarn-rd{
+        .text{
+            background-color: rgb(244, 241, 238,.5);
+        }
+    }
 }

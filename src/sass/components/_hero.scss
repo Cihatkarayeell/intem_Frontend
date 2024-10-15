@@ -141,38 +141,38 @@
             @include bold;
         }
     }
-    .bottom-arrow{
+    .bottom-arrow {
         position: absolute;
         bottom: 9.123rem;
         left: calc(50% - 1.1rem);
         z-index: 1;
-        -webkit-animation: down 1.5s infinite;
-        animation: down 1.5s infinite;
-        transition: all 400ms ease;
+        animation: bounce 1s ease-in-out infinite;
     }
-
-    @keyframes down {
+    
+    @keyframes bounce {
         0% {
-            transform: translate(0);
+            transform: translateY(0);
         }
-        20% {
+        50% {
             transform: translateY(15px);
         }
-        40% {
-            transform: translate(0);
+        100% {
+            transform: translateY(0);
         }
     }
-    @-webkit-keyframes down {
+    
+    @-webkit-keyframes bounce {
         0% {
-            transform: translate(0);
+            transform: translateY(0);
         }
-        20% {
+        50% {
             transform: translateY(15px);
         }
-        40% {
-            transform: translate(0);
+        100% {
+            transform: translateY(0);
         }
     }
+    
     .share-block{
         z-index: 2;
         position: absolute;
