@@ -33,12 +33,6 @@ body {
   }
 }
 
-
-a {
-  text-decoration: none;
-  color: var(--color-link);
-}
-
 b,
 strong {
   font-weight: var(--font-bold);
@@ -54,8 +48,3 @@ svg {
   display: inline;
 }
 
-
-[href^='tel:'],
-[href^='mailto:'] {
-  text-decoration: underline;
-}

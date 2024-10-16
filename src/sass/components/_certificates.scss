@@ -43,7 +43,12 @@
                 align-items: center;
                 justify-content: center;
                 gap: 0 4rem;
-                height: 6rem;
+                max-height: 6rem;
+            }
+            &:last-child{
+                .items{
+                    height: 5rem;
+                }
             }
         }
     }

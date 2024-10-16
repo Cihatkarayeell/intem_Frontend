@@ -5,6 +5,11 @@
     position: relative;
     &.hero{
         max-height: 75.5rem;
+        .text{
+            .title{
+                margin-top: 24.5rem;
+            }
+        }
     }
     .hero-backg{
         width: 100%;
@@ -63,7 +68,7 @@
                 @include bold;
                 text-align: center;
                 font-family: "Philosopher", sans-serif;
-                margin-top: 24.5rem;
+                margin-top: 32rem;
             }
             .home-hero-subtitle{
                 margin-top: 2.5rem;
@@ -255,6 +260,54 @@
                 color: #ffffff;
                 @include regular;
             }
+        }
+    }
+    .hero-backg{
+        
+    }
+    &#contact-hero{
+        .hero-section{
+            max-height: 31.2rem;
+            height: 31.2rem;
+            .text{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .title{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    &#error-hero{
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .title{
+                margin-top: 0;
+                font-family: 'Gotham',sans-serif;
+            }
+            .opacity-title{
+                margin-top: 1.6rem;
+            }
+        }
+    }
+    .home-button{
+        width: auto;
+        background-color: #ffffff;
+        padding: 1rem 3.9rem;
+        border-radius: .5rem;
+        margin-top: 3.2rem;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        color: #000000;
+        @include medium;
+    }
+    &#search-hero{
+        .hero-section{
+            height: 31.2rem;
         }
     }
 }

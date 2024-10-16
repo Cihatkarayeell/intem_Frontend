@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 @@include('partial/references-slider.js')
 @@include('partial/newsletter.js')
 @@include('partial/news-slider.js')
+@@include('partial/sss.js')
 @@include('partial/cookie-modal.js')
 @@include('partial/video-modal.js')
 
