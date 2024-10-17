@@ -4,11 +4,29 @@
     background-color: #ffffff;
     padding-top: 6.4rem;
     padding-bottom: 6.4rem;
+    @include bigger-than-lg{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    @include sm{
+        padding-top: 0;
+    }
     .design-card{
         width: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        @include bigger-than-lg{
+            height: 78.1rem !important;
+        }
+        @include md{
+            height: 38rem !important;
+            justify-content: center;
+        }
+        @include sm{
+            flex-direction: column-reverse;
+            height: 100% !important;
+        }
         .text{
             background-color: #F4F1EE;
             padding-top: 6.4rem;
@@ -20,6 +38,30 @@
             flex-direction: column;
             max-width: 76.5rem;
             height: 100%;
+            @include bigger-than-lg{
+                max-width: 105.2rem;
+                padding-top: 3rem;
+                padding-left: 4rem;
+            }
+            @include md{
+                padding-left: 4rem;
+                padding-top: 4.3rem;
+                padding-right: 7.3rem;
+            }
+            @include md{
+                max-width: 51.2rem;
+            }
+            @include sm{
+                width: 100%;
+                max-width: 100%;
+                background-color: transparent;
+                padding: 0 5rem;
+                padding-top: 2.6rem;
+            }
+            @include mini{
+                padding: 0 3rem;
+                padding-top: 2.6rem;
+            }
             .title{
                 font-size: 1.7rem;
                 line-height: 2rem;
@@ -27,6 +69,9 @@
                 color: #000000;
                 opacity: .5;
                 margin-bottom: 3.8rem;
+                @include lg{
+                    margin-bottom: 1.4rem;
+                }
             }
             .desc{
                 font-size: 2.8rem;
@@ -38,6 +83,14 @@
                 .strong{
                     @include medium;
                     display: inline;
+                }
+                @include md{
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+                @include mini{
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
                 }
             }
             .sub-content{
@@ -69,6 +122,8 @@
         }
         .img{
             position: relative;
+            height: 100%;
+            width: 100%;
             &:after{
                 content: "";
                 position: absolute;
@@ -78,6 +133,29 @@
                 height: 100%;
                 background-color: #ffffff;
                 opacity: .5;
+                @include sm{
+                    display: none;
+                }
+            }
+            @include md{
+                width: 34.5rem;
+                height: 38rem;
+            }
+            @include sm{
+                width: 100%;
+                max-height: 39rem;
+                background-color: rgb(244, 241, 238,.5);
+                padding: 0 5rem;
+            }
+            @include mini{
+                padding: 0 3rem;
+                height: 100%;
+                max-height: 100%;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -145,6 +223,9 @@
         .design-card{
             .text{
                 padding-right: 7.5rem;
+                @include mini{
+                    padding-right: 3rem;
+                }
                 .desc{
                     font-size: 1.7rem;
                     line-height: 2rem;
@@ -153,6 +234,10 @@
                     opacity: .8;
                     &:last-child{
                         margin-bottom: 0;
+                    }
+                    @include mini{
+                        font-size: 1.5rem;
+                        line-height: 1.8rem;
                     }
                 }
             }

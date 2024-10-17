@@ -2,6 +2,15 @@
     width: 100%;
     padding-top: 6.6rem;
     padding-bottom: 6.4rem;
+    @include bigger-than-lg{
+        .container{
+            max-width: 128rem;
+        }
+    }
+    @include xl{
+        padding-left: 3rem;
+        padding-right:3rem
+    }
     .header{
         h1.title{
             font-size: 4.8rem;
@@ -20,11 +29,30 @@
             margin-bottom: 5.6rem;
             &:nth-child(2){
                 margin-bottom: 3.2rem;
+                .input-group{
+                    width: 50%;
+                    max-width: 50%;
+                    margin-right: 2.4rem;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
             }
             .input-group{
                 min-width: 29.6rem;
                 &.message-group{
                     width: 100%;
+                    @include md{
+                        width: 50%;
+                    }
+                }
+                @include xl{
+                    width: 100%;
+                    min-width: auto;
+                }
+                @include sm{
+                    width: 50%;
+                    max-width: 50%;
                 }
             }
         }
@@ -33,7 +61,18 @@
         display: flex;
         align-items: flex-start;
         justify-content:flex-start;
-        
+        @include sm{
+            flex-direction: column;
+            align-items: flex-start;
+            .submit-button{
+                margin-left: 0;
+                margin-top: 2rem;
+                width: 100%;
+                button{
+                    width: 100%;
+                }
+            }
+        }
     }
     .submit-button{
         margin-left: auto;
@@ -58,11 +97,23 @@
             width: 100%;
             display: flex;
             align-items: stretch;
+            @include md{
+                flex-direction: column;
+                align-items: center;
+            }
             .info-item{
                 max-width: 29.6rem;
                 width: 100%;
                 position: relative;
                 margin-left: 3.2rem;
+                @include md{
+                    width: 100%;
+                    max-width: 100%;
+                    margin-left: 0;
+                    margin-top: 4rem;
+                    text-align: center;
+                    padding-bottom: 1rem;
+                }
                 &:first-child{
                     margin-left: 0;
                 }
@@ -79,6 +130,12 @@
                     top: 0;
                     right: 0;
                     background-color: #000000;
+                    @include md{
+                        width: 100%;
+                        height: .1rem;
+                        top: auto;
+                        bottom: 0;
+                    }
                 }
                 .card-link{
                     display: inline-flex;
@@ -88,12 +145,19 @@
                     @include medium;
                     color: #000000;
                     line-height: 3.4rem;
+                    @include md{
+                        text-align: center;
+                    }
                 }
                 .adress{
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     margin-bottom: 2.4rem;
+                    @include md{
+                        justify-content: center;
+                        align-items: center;
+                    }
                     .header{
                         .title{
                             font-size: 1.7rem;
@@ -102,6 +166,7 @@
                             @include medium;
                             opacity: .8;
                             margin-bottom: 1.5rem;
+                            width: max-content;
                         }
                     }
                     .content{

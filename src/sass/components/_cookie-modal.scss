@@ -11,6 +11,14 @@
   overflow: hidden;
   transition: bottom 0.5s ease-in-out;
   z-index: 2;
+  @include mini{
+    width: 35rem;
+    margin: 0 3rem;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 18rem;
+  }
 }
 
 .cookie-content {
@@ -20,6 +28,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  @include mini{
+    padding: 2rem;
+  }
 }
 
 .cookie-buttons {
@@ -43,6 +54,10 @@ h2{
   color: #000000;
   @include medium;
   text-align: left;
+  @include mini{
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
 }
 p{
   font-size: 1.3rem;
@@ -55,6 +70,8 @@ p{
   a{
     text-decoration: underline;
     color: #000000;
+  }
+  @include mini{
   }
 }
 

@@ -3,6 +3,26 @@
 	margin-top: 5.2rem;
 	height: 52.1rem;
 	position: relative;
+	@include bigger-than-lg{
+        .container{
+            max-width: 128rem;
+        }
+    }
+	@include xl{
+		padding: 0 2rem;
+	}
+	@include md{
+		height: 100%;
+		padding-bottom: 16.2rem;
+	}
+	@include sm{
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+	@include mini{
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
 	.footer {
 		display: block;
 		width: 100%;
@@ -25,6 +45,9 @@
 			align-items: flex-start;	
 			width: 100%;
 			justify-content: space-between;
+			@include md{
+				flex-direction: column;
+			}
 			.footer-info{
 				display: flex;
 				flex-direction: column;
@@ -85,6 +108,16 @@
 				gap: 0 3.2rem;
 				justify-content: flex-start;
 				margin-left: 14.1rem;
+
+				@include md{
+					margin-left: 0;
+					margin-top: 7.2rem;
+					width: 100%;
+					gap: 0 2.9rem;
+				}
+				@include sm{
+					flex-direction: column;
+				}
 				.footer-list{
 					display: flex;
 					flex-direction: column;
@@ -99,6 +132,14 @@
 						width: 100%;
 						padding-bottom: 1.5rem;
 						border-bottom: .1rem solid rgb(0, 0, 0,.5);
+					}
+					@include sm{
+						max-width: 100%;
+						width: 100%;
+						margin-bottom: 2.4rem;
+						&:last-child{
+							margin-bottom: 0;
+						}
 					}
 					ul{
 						display: flex;
@@ -127,6 +168,17 @@
 		position: absolute;
 		bottom: 0;
 		left: 0;
+		@include xl{
+			padding: 0 2rem;
+		}
+		@include sm{
+			padding-left: 5rem;
+			padding-right: 5rem;
+		}
+		@include mini{
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
 		.footer-bottom{
 			width: 100%;
 			display: flex;

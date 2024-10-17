@@ -32,6 +32,9 @@
     bottom: 16.2rem;
     left: 50%;
     transform: translateX(-50%);
+    @include md{
+      bottom: 7.5rem;
+    }
     .swiper-slide{
         width: max-content !important;
         cursor: pointer;

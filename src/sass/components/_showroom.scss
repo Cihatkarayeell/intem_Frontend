@@ -4,6 +4,11 @@
     margin-top: 8.4rem;
     padding-top: 6.4rem;
     margin-bottom: 6.4rem;
+    @include mini{
+        padding-top: 4.6rem;
+        margin-top: 5.2rem;
+        margin-bottom: 0;
+    }
     .showroom-card{
         display: flex;
         align-items: center;
@@ -11,10 +16,53 @@
         margin: 0 auto;
         position: relative;
         width: 134rem;
+        @include bigger-than-lg{
+            padding-left: 6.7rem;
+            padding-right: 6.7rem;
+            width: 100%;
+        }
+        @include md{
+            padding-left: 3.5rem;
+            width: auto;
+        }
+        @include sm{
+            padding-left: 0;
+            flex-direction: column;
+        }
     }
     .card-img{
         max-width: 76.3rem ;
         max-height: 54.1rem;
+        @include bigger-than-lg{
+            max-width: 101.7rem;
+            max-height: 72.2rem;
+            height: 72.2rem;
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        @include md{
+            max-width: 54.3rem;
+            max-height: 38.4rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        @include sm{
+            max-width: 100%;
+            max-height: 29.3rem;
+            width: 100%;
+            height: 29.3rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        
         .card-img-wrap{
             display: flex;
             img{
@@ -47,6 +95,33 @@
         padding: 4.8rem 7.7rem 5.5rem 6.2rem;
         position: absolute;
         right: 0rem;
+        @include bigger-than-lg{
+            max-width: 80.9rem;
+            max-height: 45.8rem;
+            right: 7rem;
+            height: 100%;
+            padding-top: 6.4rem;
+            justify-content: flex-start;
+        }
+        @include md{
+            max-width: 43.2rem;
+            right: 3.5rem;
+        }
+        @include sm{
+            position: relative;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+            padding-top: 2.7rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            background-color: #ffffff;
+        }
+        @include mini{
+            padding-left: 3rem;
+            padding-right: 3rem;
+            
+        }
         .header{
             .title{
                 font-size: 1.7rem;
@@ -55,6 +130,9 @@
                 color: #000000;
                 opacity: .5;
                 margin-bottom: 4rem;
+                @include mini{
+                    margin-bottom: 2.5rem;
+                }
             }
         }
         .desc{
@@ -70,6 +148,14 @@
             }
             &:first-child{
                 margin-bottom: 4rem;
+            }
+            @include md{
+                font-size: 1.7rem;
+                line-height: 2rem;
+            }
+            @include mini{
+                font-size: 1.5rem;
+                line-height: 1.8rem;
             }
         }
     }
@@ -88,6 +174,10 @@
                 line-height: 2rem;
                 .strong{
                     @include medium;
+                }
+                @include mini{
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
                 }
             }
         }

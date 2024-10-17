@@ -4,10 +4,24 @@
   max-width: 128rem;
   margin: 0 auto;
   position: relative;
+  @include bigger-than-xl{
+    max-width: 176rem;
+    margin: 0 3rem;
+    width: auto;
+  }
+  @include lg{
+    max-width: 85.7rem;
+  }
+  @include md{
+    max-width: 86.4rem;
+  }
 }
 .alt-container{
   max-width: 84.2rem;
   width: 100%;
   margin: 0 auto;
   position: relative;
+  @include bigger-than-lg{
+    max-width: 128rem;
+  }
 }
