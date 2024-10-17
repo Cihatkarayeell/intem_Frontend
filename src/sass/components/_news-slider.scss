@@ -5,6 +5,14 @@
     width: 100%;
     position: relative;
     padding-left: 6rem;
+    @include md{
+        padding-left: 5rem;
+        padding-right: 3rem;
+    }
+    @include mini{
+        padding-left: 5rem;
+        padding-right: 3rem;
+    }
     .swiper{
         height: max-content;
     }
@@ -20,6 +28,9 @@
     }
     .feature-item{
         margin-right: 5rem;
+        @include md{
+            margin-right: 0;
+        }
         .content{
             text-align: left;
             font-size: 1.7rem;

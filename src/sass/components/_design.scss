@@ -101,6 +101,10 @@
                 font-family: "Philosopher", sans-serif;
                 margin-top: 3.2rem;
                 margin-bottom: 1.4rem;
+                @include mini{
+                    font-size: 2.4rem;
+                    line-height: 2.8rem;
+                }
             }
             .sub-header{
                 display: flex;
@@ -197,6 +201,9 @@
         .design-card{
             .text{
                 padding-right: 7.5rem;
+                @include sm{
+                    padding-right: 3rem;
+                }
                 .desc{
                     font-size: 1.7rem;
                     line-height: 2rem;
@@ -244,8 +251,10 @@
         }
     }
     &#yarn-rd{
+        padding-bottom: 2rem;
         .text{
             background-color: rgb(244, 241, 238,.5);
+            padding-bottom: 3rem;
         }
     }
 }

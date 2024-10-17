@@ -4,6 +4,14 @@
             max-width: 128rem;
         }
     }
+    @include lg{
+        padding-left: 5rem;
+        padding-right:5rem;
+    }
+    @include mini{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
 .accordion {
     width: 100%;
@@ -12,6 +20,9 @@
     overflow: hidden;
     padding-top: 8rem;
     height: 78.8rem;
+    @include sm{
+        padding-top: 4rem;
+    }
     .header{
         margin-bottom: 3.8rem;
         .title{

@@ -22,7 +22,13 @@
             justify-content: center;
         }
     }
+    @include bigger-than-xl{
+        padding-left: 3rem;
+    }
     @include md{
+        padding-left: 5rem;
+    }
+    @include sm{
         padding-left: 5rem;
     }
     @include mini{

@@ -4,6 +4,23 @@
     height: 100%;
     padding-top: 5rem;
     padding-bottom: 5.4rem;
+    @include bigger-than-lg{
+        padding: 0 2rem;
+        padding-top: 5rem;
+        padding-bottom: 5.4rem;
+    }
+    @include md{
+        padding: 0 5rem;
+        padding-top: 5rem;
+        padding-bottom: 5.4rem;
+    }
+    @include sm{
+        padding-top: 3rem;
+        padding-bottom: 3.4rem;
+    }
+    @include mini{
+        padding-left: 3rem;
+    }
     .header{
         .title{
             font-size: 1.7rem;
@@ -29,6 +46,10 @@
             .strong{
                 @include medium;
                 display: inline;
+            }
+            @include sm{
+                font-size: 1.7rem;
+                line-height: 2rem;
             }
         }
     }

@@ -10,7 +10,8 @@ const GET_PARAM = (key) => {
 // PARTIALS
 @@include('partial/header.js') 
 @@include('partial/watermark.js')
- 
+
+
 // UTILS
 @@include('util/fade-out.js')
 @@include('util/smooth-scroll.js')
@@ -26,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
  
 
 @@include('partial/init.js') 
-@@include('partial/news-detail-modal.js')
 @@include('partial/hero-slider.js')
 @@include('partial/sidebar-menu.js')
 @@include('partial/loading-page.js')
@@ -36,4 +36,5 @@ document.addEventListener('DOMContentLoaded', () => {
 @@include('partial/sss.js')
 @@include('partial/cookie-modal.js')
 @@include('partial/video-modal.js')
+@@include('partial/news-detail-modal.js')
 

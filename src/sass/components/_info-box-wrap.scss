@@ -4,9 +4,17 @@
     background-color: #ffffff;
     padding-top: 3.4rem;
     padding-bottom: 3.4rem;
+    .container{
+        margin: 0 auto;
+    }
     @include bigger-than-lg{
         .container{
             max-width: 128rem;
+        }
+    }
+    @include xl{
+        .container{
+            margin: 0 auto;
         }
     }
     @include md{

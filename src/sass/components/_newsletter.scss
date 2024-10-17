@@ -7,9 +7,14 @@
         }
     }
     @include xl{
-		padding: 0 2rem;
+		padding: 0 5rem;
 	}
+    @include sm{
+        padding: 0 5rem;
+    }
     @include mini{
+        padding: 0 3rem;
+
         padding-bottom: 10.5rem;
     }
     .newsletter-block{
@@ -28,14 +33,7 @@
                 margin-bottom: 3.8rem;
             }
         }
-        @include sm{
-            padding-right: 5rem;
-            padding-left: 5rem;
-        }
-        @include mini{
-            padding-left: 3rem;
-            padding-right: 3rem;
-        }
+        
         @include mini{
             .checkbox-group{
                 flex-direction: column;

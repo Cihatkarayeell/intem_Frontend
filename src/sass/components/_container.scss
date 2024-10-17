@@ -6,7 +6,6 @@
   position: relative;
   @include bigger-than-xl{
     max-width: 176rem;
-    margin: 0 3rem;
     width: auto;
   }
   @include lg{
