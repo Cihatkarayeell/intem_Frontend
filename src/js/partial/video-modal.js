@@ -1,4 +1,4 @@
-/* 
+
 // Modal ve butonları seçiyoruz
 const modal = document.getElementById('modal');
 const openModalBtn = document.getElementById('openModalBtn');
@@ -27,4 +27,3 @@ window.addEventListener('click', (event) => {
     }, 500);
   }
 });
-*/

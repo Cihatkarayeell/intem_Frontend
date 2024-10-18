@@ -28,3 +28,52 @@
         }
     }
 }
+#our-clients-section{
+    width: 100%;
+    overflow: hidden;
+
+    .swiper{
+        overflow: unset;
+    }
+
+    .swiper-wrapper{
+        transition-timing-function: linear;
+    }
+
+    .swiper-slide{
+        width: unset !important;
+    }
+
+    .btn-huge{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4.5rem;
+
+        @include md {
+            gap: 0 1.6rem;
+        }
+        
+        @include bigger-than-md {
+            gap: 0 3.2rem;
+        }
+        
+    }
+}
+.client-card{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .4rem;
+    background-color: $color-white;
+    width: 14.2rem;
+    height: 11.5rem;
+
+    img{
+        width: auto;
+        height: auto;
+        max-width: 90%;
+        max-height: 90%;
+    }
+}

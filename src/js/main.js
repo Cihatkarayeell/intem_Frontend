@@ -11,7 +11,6 @@ const GET_PARAM = (key) => {
 @@include('partial/header.js') 
 @@include('partial/watermark.js')
 
-
 // UTILS
 @@include('util/fade-out.js')
 @@include('util/smooth-scroll.js')
